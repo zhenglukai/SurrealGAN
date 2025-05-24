@@ -173,7 +173,7 @@ class Surreal_GAN_train():
 				res_str_list += ["*** Max epoch reached and criterion not satisfied ***"]
 				if verbose:  
 					self.print_log(result_f, res_str)
-		agreement_f.close()
+		#agreement_f.close()
 		if verbose: result_f.close()
 		if not verbose: pbar.close()
 		return False
