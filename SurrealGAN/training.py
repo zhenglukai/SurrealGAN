@@ -306,7 +306,6 @@ class Surreal_GAN_train:
                 ]
                 if verbose:
                     self.print_log(result_f, res_str)
-        agreement_f.close()
         if verbose:
             result_f.close()
         if not verbose:
