@@ -28,7 +28,7 @@ def weights_init(m: nn.Module) -> None:
 
 
 def define_Linear_Mapping(nROI: Any, nPattern: int) -> nn.Module:
-    netG = LMappingGenerator(nPattern, nROI)  # type: ignore
+    netG = LMappingGenerator(nPattern, nROI, product_layer=Sub_Adder)  # type: ignore
     netG.apply(weights_init)
     return netG
 
