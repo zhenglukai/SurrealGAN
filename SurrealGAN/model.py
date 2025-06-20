@@ -295,6 +295,8 @@ class SurrealGAN(object):
                 ("loss_decompose", decompose_loss.item()),
             ]
         )
+        
+        print("DEBUG: losses keys =", list(losses.keys()))
 
         return losses
 
