@@ -124,9 +124,6 @@ class Surreal_GAN_train:
         data_fraction: int = 1,
         verbose: bool = True,
     ) -> bool:
-        
-        global losses  # <-- Declare losses as global
-        
         if verbose:
             result_f = open("%s/results.txt" % save_dir, "w")
 
