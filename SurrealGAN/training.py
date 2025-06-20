@@ -203,7 +203,7 @@ class Surreal_GAN_train:
 
                 loss_names = ["loss_recons", "loss_mono"]
                 for _ in range(2):
-                    criterion_loss_list[_].append(losses.get(loss_names[_], 0.0))
+                    criterion_loss_list[_].append(losses[loss_names[_]])
 
                 for _ in range(2):
                     criterion_loss_list[_].pop(0)
