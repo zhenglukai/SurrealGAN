@@ -72,9 +72,6 @@ class Surreal_GAN_train():
 
 
 	def train(self, data, covariate, save_dir, repetition, random_seed=0, data_fraction=1, verbose=True):
-		
-		global losses  # <-- Declare losses as global
-		
 		if verbose: 
 			result_f = open("%s/results.txt" % save_dir, 'w')
 
